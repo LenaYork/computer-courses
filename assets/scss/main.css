@@ -1,3 +1,24 @@
+.button {
+  background: transparent;
+  cursor: pointer;
+}
+
+section {
+  width: 70%;
+  margin: 5% 15%;
+  background-color: black;
+}
+
+.section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 90px;
+}
+
 .header {
   background-color: black;
 }
@@ -6,16 +27,57 @@
   color: white;
 }
 
-.speakers {
-  width: 80%;
-  margin: 5% 10%;
-  background-color: black;
+.main-container {
+  background-color: #0a0a0a;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.partners-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.partners-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(205px, 260px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(205px, 260px));
+  justify-items: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  margin: 0 auto;
+}
+
+.partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+border-opac
+.partner img {
+  width: 198px;
+  height: 93px;
 }
 
 .speakers-logo {
   width: 91px;
   height: 45px;
-  margin-right: 15px;
+  margin: 0 3%;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -30,16 +92,8 @@
   color: #FFFFFF;
 }
 
-.speakers-title-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .speakers-area {
+  margin: 45px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (400px)[auto-fill];
@@ -47,6 +101,9 @@
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-row-gap: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .speaker {
@@ -60,6 +117,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 20px;
 }
 
 .speaker-pic {
@@ -69,21 +127,21 @@
 }
 
 .speaker-name {
+  margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 140%;
   text-align: center;
   color: #FFFFFF;
 }
 
 .speaker-info {
+  margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 160%;
   text-align: center;
   color: #FFFFFF;
   opacity: 0.8;

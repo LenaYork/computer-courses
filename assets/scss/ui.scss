@@ -1,0 +1,19 @@
+.button {
+    background: transparent;
+    cursor: pointer;
+}
+
+//отредачить!
+section {
+    width: 70%;
+    margin: 5% 15%;
+    background-color: black;
+}
+
+.section {
+    &-title {
+        display: flex;
+        align-items: center;
+        min-height: 90px;
+    }
+}
