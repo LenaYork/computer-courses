@@ -3,10 +3,20 @@
   cursor: pointer;
 }
 
+h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 section {
   width: 70%;
   margin: 5% 15%;
-  background-color: black;
+  background-color: #0a0a0a;
 }
 
 .section-title {
@@ -33,6 +43,58 @@ section {
   max-width: 1920px;
 }
 
+.pluses-title {
+  margin-bottom: 5%;
+}
+
+.pluses-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(316px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
+  grid-column-gap: 50px;
+}
+
+.plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plus img {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.plus-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.plus-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
 .partners-title {
   font-family: Roboto;
   font-style: normal;
@@ -49,9 +111,9 @@ section {
   -ms-grid-columns: (minmax(205px, 260px))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(205px, 260px));
   justify-items: stretch;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
 }
 

@@ -3,11 +3,21 @@
     cursor: pointer;
 }
 
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: $title-color;
+}
+
 //отредачить!
 section {
     width: 70%;
     margin: 5% 15%;
-    background-color: black;
+    background-color: $bg-color;
 }
 
 .section {
