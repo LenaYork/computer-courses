@@ -1,0 +1,57 @@
+.about {
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(500px, 550px));
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 1450px) {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    @media (max-width: 1449px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    &-area {
+        // width: 500px;
+        width: 75%;
+        margin-left: 10%;
+    }
+
+    &-pics {
+        width: 526px;
+        height: 499px;
+        background-image: url("../pics/about/rectangle.png");
+        position: relative;
+        // z-index:4;
+    }
+
+    &-computer {
+        position: absolute;
+        top: 95px;
+        left: 40px;
+        // margin-right: 50px;
+    }
+
+    &-title {
+        text-align: left;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 140%;
+        color: $white;
+    }
+
+    &-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: $white;
+}
+
+}

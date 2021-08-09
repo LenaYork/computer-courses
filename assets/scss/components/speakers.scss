@@ -32,7 +32,7 @@
     &-area {
         margin: 45px 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, 400px);
+        grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
         grid-template-rows: 1fr;
         grid-row-gap: 35px;
         justify-content: center;

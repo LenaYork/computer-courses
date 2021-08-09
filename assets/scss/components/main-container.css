@@ -1,6 +1,6 @@
 .main-container {
-  background-color: .main-container bg-color;
-  width: 100%;
+  background-color: lime;
+  width: 100vw;
   max-width: 1920px;
 }
 /*# sourceMappingURL=main-container.css.map */

@@ -20,8 +20,8 @@
   margin: 45px 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (400px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 400px);
+  -ms-grid-columns: (minmax(200px, 300px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-row-gap: 35px;
