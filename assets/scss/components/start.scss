@@ -25,19 +25,22 @@
 
     &-area {
         display: grid;
-        justify-content: space-evenly;
+        // justify-content: stretch;
+        justify-content: center;
 
         @media (min-width: 1859px) {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            // grid-template-columns:  1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(4, 324px);
         }
 
         @media (min-width: 933px) and (max-width: 1858px) {
-            grid-template-columns: 1fr 1fr;
+            // grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 324px);
             grid-template-rows: 1fr 1fr;
         }
 
         @media (max-width: 932px) {
-            grid-template-columns: 1fr;
+            grid-template-columns: 324px;
             grid-template-rows: 1fr 1fr 1fr 1fr;
         }
         // grid-template-columns: repeat(auto-fill, 324px);

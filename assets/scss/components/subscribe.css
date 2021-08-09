@@ -1,0 +1,127 @@
+.subscribe {
+  width: 547px;
+  margin: 0 auto;
+}
+
+.subscribe-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe-subtitle {
+  margin: 0 15%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.subscribe-area {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.subscribe-form {
+  position: relative;
+  margin-top: 10%;
+}
+
+@media (min-width: 676px) {
+  .subscribe-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 675px) {
+  .subscribe-form {
+    width: 60%;
+    margin: 10% auto 0;
+  }
+}
+
+.subscribe-input {
+  height: 44px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50px 0px 0px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+  color: white;
+}
+
+@media (min-width: 676px) {
+  .subscribe-input {
+    width: 480px;
+  }
+}
+
+@media (max-width: 675px) {
+  .subscribe-input {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.subscribe-input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.subscribe-input:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.subscribe-input::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.subscribe-input::placeholder {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.subscribe-button {
+  position: absolute;
+  width: 160px;
+  height: 44px;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 10px;
+  right: -5%;
+  bottom: 0;
+}
+/*# sourceMappingURL=subscribe.css.map */

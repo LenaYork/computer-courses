@@ -1,5 +1,8 @@
 .button {
   background: transparent;
+}
+
+.button:hover {
   cursor: pointer;
 }
 
@@ -27,6 +30,51 @@ section {
       -ms-flex-align: center;
           align-items: center;
   min-height: 90px;
+}
+
+.social {
+  display: -ms-grid;
+  display: grid;
+  margin: 10% auto 0;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 421px) {
+  .social {
+    width: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .social {
+    width: 210px;
+  }
+}
+
+.social:hover {
+  cursor: pointer;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.vk-icon {
+  background-image: url("../pics/social/vk.png");
+}
+
+.fb-icon {
+  background-image: url("../pics/social/fb.png");
+}
+
+.youtube-icon {
+  background-image: url("../pics/social/youtube.png");
+}
+
+.insta-icon {
+  background-image: url("../pics/social/insta.png");
 }
 
 .header {
@@ -133,22 +181,22 @@ section {
 .start-area {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 1859px) {
   .start-area {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: (324px)[4];
+        grid-template-columns: repeat(4, 324px);
   }
 }
 
 @media (min-width: 933px) and (max-width: 1858px) {
   .start-area {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: (324px)[2];
+        grid-template-columns: repeat(2, 324px);
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
   }
@@ -156,8 +204,8 @@ section {
 
 @media (max-width: 932px) {
   .start-area {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 324px;
+        grid-template-columns: 324px;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
   }
@@ -407,5 +455,132 @@ border-opac
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+}
+
+.subscribe {
+  width: 547px;
+  margin: 0 auto;
+}
+
+.subscribe-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe-subtitle {
+  margin: 0 15%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.subscribe-area {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.subscribe-form {
+  position: relative;
+  margin-top: 10%;
+}
+
+@media (min-width: 676px) {
+  .subscribe-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 675px) {
+  .subscribe-form {
+    width: 60%;
+    margin: 10% auto 0;
+  }
+}
+
+.subscribe-input {
+  height: 44px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50px 0px 0px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+  color: white;
+}
+
+@media (min-width: 676px) {
+  .subscribe-input {
+    width: 480px;
+  }
+}
+
+@media (max-width: 675px) {
+  .subscribe-input {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.subscribe-input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.subscribe-input:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.subscribe-input::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.subscribe-input::placeholder {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.subscribe-button {
+  position: absolute;
+  width: 160px;
+  height: 44px;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 10px;
+  right: -5%;
+  bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

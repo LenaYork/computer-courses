@@ -1,0 +1,112 @@
+.subscribe {
+    width: 547px;
+    margin: 0 auto;
+
+    &-title {
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &-subtitle {
+        margin: 0 15%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+
+    &-area {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &-form {
+        position: relative;
+        margin-top: 10%;
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 1fr 1fr;
+    
+        @media (min-width: 676px) {
+            width: 100%;
+        }
+
+        @media (max-width: 675px) {
+            width: 60%;
+            margin: 10% auto 0;
+        }
+
+
+    }
+
+    &-input {
+        // width: 480px;
+        // width: 80%;
+        height: 44px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        background-color: rgba(255, 255, 255, 0.25);
+        // opacity: 0.8;   
+        // opacity: 0.25;
+        
+        border-radius: 50px 0px 0px 50px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        color: white;
+
+        @media (min-width: 676px) {
+            width: 480px;
+        }
+
+        @media (max-width: 675px) {
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+
+    &-input::placeholder {
+        // padding-right: 5%;
+        color: #FFFFFF;
+        font-size: large;
+    }
+
+    &-button {
+        position: absolute;
+        // right: -5%;
+        // bottom: 1px;
+        width: 160px;
+        height: 44px;
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+        border-radius: 50px;
+        box-sizing: border-box;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 10px;
+        right: -5%;
+        bottom: 0;
+        
+    }
+}

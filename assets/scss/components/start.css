@@ -24,22 +24,22 @@
 .start-area {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 1859px) {
   .start-area {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: (324px)[4];
+        grid-template-columns: repeat(4, 324px);
   }
 }
 
 @media (min-width: 933px) and (max-width: 1858px) {
   .start-area {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: (324px)[2];
+        grid-template-columns: repeat(2, 324px);
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
   }
@@ -47,8 +47,8 @@
 
 @media (max-width: 932px) {
   .start-area {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 324px;
+        grid-template-columns: 324px;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
   }
