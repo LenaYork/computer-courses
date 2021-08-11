@@ -1,6 +1,13 @@
 .subscribe {
-    width: 547px;
     margin: 0 auto;
+
+    @media (min-width: 787px) {
+        width: 547px;
+    }
+
+    @media (max-width: 786px) {
+        width: 90%;
+    }
 
     &-title {
         
@@ -40,11 +47,20 @@
     
         @media (min-width: 676px) {
             width: 100%;
+            position: relative;
         }
 
-        @media (max-width: 675px) {
+        @media (min-width: 501px) and (max-width: 675px) {
             width: 60%;
             margin: 10% auto 0;
+            position: relative;
+        }
+
+        @media (max-width: 500px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: static;
         }
 
 
@@ -76,6 +92,7 @@
             width: 200px;
             margin: 0 auto;
         }
+        
     }
 
     &-input::placeholder {

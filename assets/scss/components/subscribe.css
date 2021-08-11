@@ -1,6 +1,17 @@
 .subscribe {
-  width: 547px;
   margin: 0 auto;
+}
+
+@media (min-width: 787px) {
+  .subscribe {
+    width: 547px;
+  }
+}
+
+@media (max-width: 786px) {
+  .subscribe {
+    width: 90%;
+  }
 }
 
 .subscribe-title {
@@ -39,13 +50,29 @@
 @media (min-width: 676px) {
   .subscribe-form {
     width: 100%;
+    position: relative;
   }
 }
 
-@media (max-width: 675px) {
+@media (min-width: 501px) and (max-width: 675px) {
   .subscribe-form {
     width: 60%;
     margin: 10% auto 0;
+    position: relative;
+  }
+}
+
+@media (max-width: 500px) {
+  .subscribe-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: static;
   }
 }
 
