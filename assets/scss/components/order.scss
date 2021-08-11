@@ -1,10 +1,34 @@
 .order {
     display: grid;
-    grid-template-columns: 15% 20% 1fr;
-    grid-gap: 5%;
+    // grid-template-columns: 15% 20% 1fr;
+    // grid-gap: 5%;
     background-color: #121212;
 
+    @media (min-width: 1501px) {
+        grid-template-columns: 15% 20% 1fr;
+        grid-template-areas: "order-button students earn";
+    }
+    
+
+    @media (min-width: 701px) and (max-width: 1500px) {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 1fr 1.5fr;
+        // grid-row-gap: 15%;
+        grid-template-areas: "order-button students" 
+                            "earn earn";
+    }
+
+    @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        // grid-row-gap: 15%;
+        grid-template-areas: "order-button"
+                            "students" 
+                            "earn";
+    }
+
     &-button {
+        grid-area: order-button;
         align-self: center;
         width: 169px;
         height: 44px; 
@@ -21,11 +45,24 @@
         line-height: 150%;
         text-align: center;
         color: #FFFFFF;
+
+        @media (min-width: 701px) {
+            margin: 0;
+        }
+    
+        @media (max-width: 700px) {
+            margin: 0 auto;
+        }
     }
+
+    
 
 }
 
 .students {
+    grid-area: students;
+    margin-right: 5%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,6 +118,7 @@
 }
 
 .earn {
+    grid-area: earn;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -89,7 +127,14 @@
     &-container {
         display: flex;
         justify-content: space-between;
-        width: 50%;
+
+        @media (min-width: 701px) {
+            width: 50%;
+        }
+
+        @media (max-width: 700px) {
+            width:100%;
+        }
     }
 
     &-text {
