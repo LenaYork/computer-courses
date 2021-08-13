@@ -565,6 +565,11 @@ section {
   opacity: 0.8;
 }
 
+.partners-logo {
+  margin-right: 15px;
+  margin-left: 25px;
+}
+
 .partners-title {
   font-family: Roboto;
   font-style: normal;
@@ -624,13 +629,41 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-border-opac
 .partner img {
   width: 198px;
   height: 93px;
+}
+
+@media (min-width: 1420px) {
+  .desktop-right {
+    border-right: 5px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 1420px) {
+  .desktop-underline {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1419px) {
+  .tablet-right {
+    border-right: 5px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1419px) {
+  .tablet-underline {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: 800px) {
+  .mobile-underline {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+  }
 }
 
 .speakers-logo {

@@ -1,5 +1,10 @@
 .partners {
 
+    &-logo {
+        margin-right: 15px;
+        margin-left: 25px;
+    }
+
     &-title {
         font-family: Roboto;
         font-style: normal;
@@ -40,8 +45,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-opac
+    // border: 1px solid rgba(255, 255, 255, 0.3);
+
+    // &:nth-child(-n+4) {
+    //     border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+    // }
 
     & img {
         width: 198px;
@@ -52,4 +60,34 @@
     // &1 {
     //     border-bottom: 1px solid $white;
     // }
+}
+
+.desktop-right {
+    @media (min-width: 1420px) {
+        border-right: 5px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.desktop-underline {
+    @media (min-width: 1420px) {
+        border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.tablet-right {
+    @media (min-width: 801px) and (max-width: 1419px) {
+        border-right: 5px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.tablet-underline {
+    @media (min-width: 801px) and (max-width: 1419px) {
+        border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.mobile-underline {   
+    @media (max-width: 800px) {
+        border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+    }
 }
