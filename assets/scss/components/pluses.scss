@@ -6,8 +6,28 @@
 
     &-area {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
-        grid-gap: 50px;
+        // grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
+        grid-template-columns: 1fr 1fr 1fr;
+        // grid-gap: 50px;
+
+        @media (min-width: 1450px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        @media (min-width: 700px) and (max-width: 1449px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 50px;
+            padding: 0 20%;
+        }
+
+        @media (max-width: 699px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 50px;
+            padding: 0 5%;
+        }
     }
     
 }
