@@ -1,14 +1,6 @@
-.start-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 140%;
-  color: #FFFFFF;
-}
-
 .start-description {
-  width: 410px;
+  width: 100%;
+  max-width: 410px;
 }
 
 .start-description-text {

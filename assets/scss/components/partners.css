@@ -1,9 +1,92 @@
-.partners-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 140%;
-  color: #FFFFFF;
+.partners-logo {
+  margin-right: 15px;
+  margin-left: 25px;
+}
+
+.partners-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 1420px) {
+  .partners-container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1419px) {
+  .partners-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .partners-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: ()[1fr];
+        grid-template-rows: repeat(1fr);
+  }
+}
+
+.partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partner img {
+  width: 198px;
+  height: 93px;
+}
+
+@media (min-width: 1420px) {
+  .desktop-right {
+    border-right: 5px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 1420px) {
+  .desktop-underline {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1419px) {
+  .tablet-right {
+    border-right: 5px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1419px) {
+  .tablet-underline {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: 800px) {
+  .mobile-underline {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+  }
 }
 /*# sourceMappingURL=partners.css.map */

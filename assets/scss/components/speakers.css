@@ -8,12 +8,12 @@
 
 .speakers-title {
   margin: 5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 140%;
-  color: #FFFFFF;
+}
+
+@media (max-width: 850px) {
+  .speakers-title-area {
+    margin: 0 auto;
+  }
 }
 
 .speakers-area {

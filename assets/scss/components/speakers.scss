@@ -13,12 +13,14 @@
 
     &-title {
         margin: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 140%;
-        color: #FFFFFF;
+    }
+
+    &-title-area {
+
+        @media (max-width: 850px) {
+            margin: 0 auto;
+        }
+        
     }
 
     &-title-container {
