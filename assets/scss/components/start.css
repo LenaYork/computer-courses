@@ -12,6 +12,7 @@
 }
 
 .start-description-text {
+  margin-bottom: 3%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -22,33 +23,40 @@
 }
 
 .start-area {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  grid-gap: 0;
 }
 
-@media (min-width: 1859px) {
+@media (min-width: 1000px) {
   .start-area {
-    -ms-grid-columns: (324px)[4];
-        grid-template-columns: repeat(4, 324px);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
   }
 }
 
-@media (min-width: 933px) and (max-width: 1858px) {
+@media (min-width: 752px) and (max-width: 999px) {
   .start-area {
-    -ms-grid-columns: (324px)[2];
-        grid-template-columns: repeat(2, 324px);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
   }
 }
 
-@media (max-width: 932px) {
+@media (max-width: 751px) {
   .start-area {
-    -ms-grid-columns: 324px;
-        grid-template-columns: 324px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
   }
@@ -63,6 +71,12 @@
   color: #FFFFFF;
 }
 
+@media (min-width: 751px) {
+  .start-percent {
+    margin: 0;
+  }
+}
+
 .start-percent-image {
   height: 80px;
   display: -webkit-box;
@@ -71,21 +85,38 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10%;
+}
+
+@media (min-width: 725px) {
+  .start-percent-image {
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 751px) {
+  .start-percent-image {
+    margin-bottom: 1%;
+  }
 }
 
 .start-area-item {
-  width: 324px;
+  width: 100%;
+}
+
+.start-percent-image {
+  width: 100%;
+}
+
+.start-line {
+  width: 100%;
 }
 
 .start-percent1000 {
-  width: 324px;
   height: 80px;
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 }
 
 .start-percent75 {
-  width: 324px;
   height: 60px;
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -93,13 +124,11 @@
 }
 
 .start-percent50 {
-  width: 324px;
   height: 30px;
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 }
 
 .start-percent-total {
-  width: 324px;
   height: 10px;
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -107,6 +136,7 @@
 }
 
 .start-area-text {
+  margin-right: 5%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
