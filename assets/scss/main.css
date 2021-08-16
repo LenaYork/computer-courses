@@ -7,6 +7,18 @@
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -113,11 +125,115 @@ section {
 }
 
 .header {
-  background-color: black;
+  background-image: url("../pics/header/header-bg.png");
+  background-size: cover;
+  max-width: 1920px;
+  height: 960px;
 }
 
 .header-title {
   color: white;
+}
+
+.header-nav {
+  grid-area: header-nav;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 888px) {
+  .header-nav-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 887px) {
+  .header-nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header-button {
+  margin: 0 auto;
+  width: 183px;
+  height: 44px;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.header-button-area {
+  grid-area: header-button;
+}
+
+.navbar {
+  width: 100%;
+  padding-top: 1%;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 1300px) {
+  .navbar {
+    -ms-grid-columns: 0.7fr 2fr 0.5fr;
+        grid-template-columns: 0.7fr 2fr 0.5fr;
+        grid-template-areas: "navbar-logo header-nav header-button";
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 888px) and (max-width: 1299px) {
+  .navbar {
+    -ms-grid-columns: 0.08fr 2fr 0.3fr;
+        grid-template-columns: 0.08fr 2fr 0.3fr;
+        grid-template-areas: "navbar-logo header-nav header-button";
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 887px) {
+  .navbar {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "navbar-logo" "header-nav" "header-button";
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.navbar-logo {
+  grid-area: navbar-logo;
+}
+
+.nav-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .main-container {
@@ -134,8 +250,8 @@ section {
 
 @media (min-width: 1501px) {
   .order {
-    -ms-grid-columns: 15% 20% 1fr;
-        grid-template-columns: 15% 20% 1fr;
+    -ms-grid-columns: 17% 20% 1fr;
+        grid-template-columns: 17% 20% 1fr;
         grid-template-areas: "order-button students earn";
   }
 }

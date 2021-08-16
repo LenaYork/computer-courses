@@ -6,8 +6,8 @@
 
 @media (min-width: 1501px) {
   .order {
-    -ms-grid-columns: 15% 20% 1fr;
-        grid-template-columns: 15% 20% 1fr;
+    -ms-grid-columns: 17% 20% 1fr;
+        grid-template-columns: 17% 20% 1fr;
         grid-template-areas: "order-button students earn";
   }
 }

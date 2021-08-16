@@ -6,6 +6,18 @@
     }
 }
 
+a {
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
 h2 {
     font-family: $title-font;
     font-style: normal;
