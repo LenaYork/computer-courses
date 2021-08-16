@@ -34,8 +34,6 @@
     &-area {
         margin: 45px 0;
         display: grid;
-        // grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
-        
         grid-template-rows: 1fr;
         grid-row-gap: 35px;
         justify-content: center;
@@ -70,7 +68,6 @@
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
-        // line-height: 140%;
         text-align: center;
         color: #FFFFFF;
     }
@@ -81,7 +78,6 @@
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        // line-height: 160%;
         text-align: center;
         color: #FFFFFF;
         opacity: 0.8;
@@ -95,13 +91,13 @@
         border-radius: 50px;
         margin: 0 auto;
 
-        font-family: Roboto;
+        font-family: $title-font;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 150%;
         text-align: center;
-        color: #FFFFFF;
+        color: $white;
     }
 }
 

@@ -1,0 +1,149 @@
+.plan {
+
+    margin: 0 auto;
+
+    &-central {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    &-description {
+        margin: 0 auto;
+        max-width: 411px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.5;
+        
+    }
+}
+
+.week {
+
+    max-width: 304px;
+    min-height: 118px;
+   
+    &-container {
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+        display: grid;
+       
+        // grid-template-columns: minmax(200px, 304px) 7px minmax(200px, 304px);
+        // grid-template-rows: repeat(7, 1fr);
+        // grid-template-areas: "week1 weekline empty1"
+        //                     "empty2 weekline week2"
+        //                     "week3 weekline empty3"
+        //                     "empty4 weekline week4"
+        //                     "week5 weekline empty5"
+        //                     "empty6 weekline week6"
+        //                     "week7 weekline empty7";
+
+        @media (min-width: 930px) {
+            justify-content: space-between;
+            grid-template-columns: minmax(200px, 304px) 7px minmax(200px, 304px);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: "week1 weekline empty1"
+                            "empty2 weekline week2"
+                            "week3 weekline empty3"
+                            "empty4 weekline week4"
+                            "week5 weekline empty5"
+                            "empty6 weekline week6"
+                            "week7 weekline empty7";
+        }
+
+        @media (max-width: 929px) {
+            justify-content: center;
+            grid-template-columns: 7px minmax(200px, 304px);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: 
+                            "weekline week1"
+                            "weekline week2"
+                            "weekline week3"
+                            "weekline week4"
+                            "weekline week5"
+                            "weekline week6"
+                            "weekline week7";
+        }
+    }
+
+    &-title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+
+    &-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+
+    &-line {
+        width: 6px;
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        grid-area: weekline;
+    }
+
+    &-left {
+        @media (min-width: 930px) {
+            text-align: right;
+            margin-left: 0;
+        }
+
+        @media (max-width: 929px) {
+            text-align: left;
+            margin-left: 5%;
+        }
+    }
+
+    &-right {
+        text-align: left;
+
+        @media (min-width: 930px) {
+            margin-left: 0;
+        }
+
+        @media (max-width: 929px) {
+            margin-left: 5%;
+        }
+    }
+
+       //цикл
+    @for $i from 1 through 7 {
+        &#{$i} {
+            grid-area: week#{$i};
+        }
+    }
+
+}
+
+//цикл
+.empty {
+    @for $i from 1 through 7 {
+        &#{$i} {
+            grid-area: empty#{$i};
+        }
+    }
+    
+    @media (min-width: 930px) {
+        display: grid;
+    }
+
+    @media (max-width: 929px) {
+        display: none;
+    }
+}
+
+
