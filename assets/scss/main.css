@@ -7,6 +7,8 @@ html {
 
 .button {
   background: transparent;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .button:hover {
@@ -114,6 +116,11 @@ section {
   height: 50px;
 }
 
+.social-icon:active {
+  background-color: purple;
+  border: 2px solid purple;
+}
+
 .vk-icon {
   background-image: url("../pics/social/vk.png");
 }
@@ -213,6 +220,11 @@ section {
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+}
+
+.header-button:active {
+  background-color: transparent;
+  border: 2px solid purple;
 }
 
 .header-button-area {
@@ -367,6 +379,8 @@ section {
 
 .order-wrap {
   width: 100%;
+  padding-top: 1%;
+  padding-bottom: 5px;
   margin: 0 auto;
   background-color: #121212;
 }
@@ -390,6 +404,11 @@ section {
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+}
+
+.order-button:active {
+  background-color: transparent;
+  border: 2px solid purple;
 }
 
 @media (min-width: 701px) {
@@ -1256,6 +1275,10 @@ section {
   color: #FFFFFF;
 }
 
+.speaker-bio:active {
+  background-color: white;
+}
+
 .subscribe {
   margin: 0 auto;
 }
@@ -1398,5 +1421,10 @@ section {
   margin: 0px 10px;
   right: -5%;
   bottom: 0;
+}
+
+.subscribe-button:active {
+  background-color: transparent;
+  border: 2px solid purple;
 }
 /*# sourceMappingURL=main.css.map */

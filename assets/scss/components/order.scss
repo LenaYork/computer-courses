@@ -28,6 +28,8 @@
 
     &-wrap {
         width: 100%;
+        padding-top: 1%;
+        padding-bottom: 5px;
         margin: 0 auto;
         background-color: #121212;
     }
@@ -50,6 +52,11 @@
         line-height: 150%;
         text-align: center;
         color: #FFFFFF;
+
+        &:active {
+            background-color: transparent;
+            border: 2px solid purple;
+        }
 
         @media (min-width: 701px) {
             margin: 0;

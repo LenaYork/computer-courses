@@ -5,11 +5,14 @@ html {
 
 .button {
     background: transparent;
+    transition: 2s;
+    
 
     &:hover {
         cursor: pointer;
     }
-}
+
+   }
 
 a {
     text-decoration: none;
@@ -99,6 +102,11 @@ section {
     &-icon {
         width: 50px;
         height: 50px;
+
+        &:active {
+            background-color: purple;
+            border: 2px solid purple;
+        }
     }
 }
 

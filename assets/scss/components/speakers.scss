@@ -98,6 +98,10 @@
         line-height: 150%;
         text-align: center;
         color: $white;
+
+        &:active {
+            background-color: white;
+        }
     }
 }
 

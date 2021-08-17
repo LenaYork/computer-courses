@@ -141,4 +141,9 @@
   right: -5%;
   bottom: 0;
 }
+
+.subscribe-button:active {
+  background-color: transparent;
+  border: 2px solid purple;
+}
 /*# sourceMappingURL=subscribe.css.map */

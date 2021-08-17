@@ -63,6 +63,11 @@
         line-height: 150%;
         text-align: center;
         color: #FFFFFF;
+
+        &:active {
+            background-color: transparent;
+            border: 2px solid purple;
+        }
         
             &-area {
                 grid-area: header-button;
@@ -111,19 +116,13 @@
         align-items: center;
     }
 
-    // @media (min-width: 660px) and (max-width: 1299px) {
-    //     grid-template-columns: 1fr 1fr;
-    //     grid-template-areas: "navbar-logo header-button"
-    //                         "header-nav header-nav";
-    //     justify-content: space-around;
-    // }
 
     @media (min-width: 888px) and (max-width: 1299px) {
         grid-template-columns: 0.08fr 2fr 0.3fr;
         grid-template-areas: "navbar-logo header-nav header-button";
         justify-content: space-around;
     }
-  
+
     @media (max-width: 887px) {
         grid-template-columns: 1fr;
         grid-template-areas: "navbar-logo"
