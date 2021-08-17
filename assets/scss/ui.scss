@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    transition: 2s;
 }
 
 .button {
@@ -58,7 +59,7 @@ p {
 //отредачить!
 section {
     width: 70%;
-    margin: 5% 15%;
+    margin: 10% 15%;
     background-color: $bg-color;
 }
 

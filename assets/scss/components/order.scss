@@ -1,7 +1,6 @@
 .order {
+    margin-top: 0;
     display: grid;
-    // grid-template-columns: 15% 20% 1fr;
-    // grid-gap: 5%;
     background-color: #121212;
 
     @media (min-width: 1501px) {
@@ -25,6 +24,12 @@
         grid-template-areas: "order-button"
                             "students" 
                             "earn";
+    }
+
+    &-wrap {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #121212;
     }
 
     &-button {

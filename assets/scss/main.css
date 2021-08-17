@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 html {
   scroll-behavior: smooth;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .button {
@@ -63,7 +65,7 @@ p {
 
 section {
   width: 70%;
-  margin: 5% 15%;
+  margin: 10% 15%;
   background-color: #0a0a0a;
 }
 
@@ -135,8 +137,37 @@ section {
   height: 960px;
 }
 
+.header-central {
+  width: 45%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
 .header-title {
-  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+@media (min-width: 869px) {
+  .header-title {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 868px) {
+  .header-title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 549px) {
+  .header-title {
+    font-size: 1.3em;
+  }
 }
 
 .header-nav {
@@ -188,6 +219,36 @@ section {
   grid-area: header-button;
 }
 
+.header-countdown {
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: (1fr)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 1fr);
+}
+
+.header-countdown-box {
+  width: 102px;
+  height: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #121212;
+}
+
 .navbar {
   width: 100%;
   padding-top: 1%;
@@ -197,8 +258,8 @@ section {
 
 @media (min-width: 1300px) {
   .navbar {
-    -ms-grid-columns: 0.7fr 2fr 0.5fr;
-        grid-template-columns: 0.7fr 2fr 0.5fr;
+    -ms-grid-columns: 0.7fr 2fr 0.8fr;
+        grid-template-columns: 0.7fr 2fr 0.8fr;
         grid-template-areas: "navbar-logo header-nav header-button";
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -243,13 +304,34 @@ section {
   color: #FFFFFF;
 }
 
+.day {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.timing {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
 .main-container {
-  background-color: lime;
+  background-color: #0a0a0a;
   width: 100vw;
   max-width: 1920px;
 }
 
 .order {
+  margin-top: 0;
   display: -ms-grid;
   display: grid;
   background-color: #121212;
@@ -281,6 +363,12 @@ section {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "order-button" "students"  "earn";
   }
+}
+
+.order-wrap {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #121212;
 }
 
 .order-button {
