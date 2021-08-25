@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
   -webkit-transition: 2s;
   transition: 2s;
+  margin: 0 auto;
 }
 
 .button {
@@ -238,8 +239,8 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-grid-columns: (1fr)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 .header-countdown-box {
@@ -303,6 +304,7 @@ section {
 }
 
 .navbar-logo {
+  margin-left: 45px;
   grid-area: navbar-logo;
 }
 
@@ -380,7 +382,6 @@ section {
 .order-wrap {
   width: 100%;
   padding-top: 1%;
-  padding-bottom: 5px;
   margin: 0 auto;
   background-color: #121212;
 }
@@ -425,8 +426,7 @@ section {
 
 .students {
   grid-area: students;
-  margin-right: 5%;
-  margin-bottom: 5%;
+  margin: 0 10% 5% 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
