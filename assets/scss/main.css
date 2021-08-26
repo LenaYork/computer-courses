@@ -146,6 +146,7 @@ section {
 }
 
 .header {
+  margin: 0 auto;
   background-image: url("../pics/header/header-bg.png");
   background-size: cover;
   max-width: 1920px;
@@ -223,6 +224,7 @@ section {
   height: 44px;
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
   border-radius: 50px;
+  border: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -356,6 +358,7 @@ section {
 }
 
 .main-container {
+  margin: 0 auto;
   background-color: #0a0a0a;
   width: 100vw;
   max-width: 1920px;
