@@ -2,7 +2,6 @@
     background-image: url("../pics/header/header-bg.png");
     background-size: cover;
     max-width: 1920px;
-    // height: auto;
     height: 960px;
 
     &-central {
@@ -50,11 +49,13 @@
     }
 
     &-button {
+        transition: 1s;
         margin: 0 auto;
         width: 183px;
         height: 44px;
         background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
         border-radius: 50px;
+        border: none;
 
         font-family: Roboto;
         font-style: normal;
@@ -64,14 +65,18 @@
         text-align: center;
         color: #FFFFFF;
 
+        &:hover {
+            background: linear-gradient(94.26deg, #7e3fc7 9.51%, #6651dd 90.23%);
+        }
+
         &:active {
-            background-color: transparent;
-            border: 2px solid purple;
+            background: linear-gradient(94.26deg, #58466d 9.51%, #302085 90.23%);
+            border: 3px solid purple;
         }
         
-            &-area {
-                grid-area: header-button;
-            }
+        &-area {
+            grid-area: header-button;
+        }
         
     }
 
@@ -82,14 +87,6 @@
         justify-content: space-between;
         grid-template-columns: repeat(4, 1fr);
 
-        // @media (min-width: 1300px) {
-        //     flex-direction: row;
-        // }
-
-        // @media (max-width: 1299px) {
-        //     flex-direction: column;
-        // }
-
         &-box {
             width: 102px;
             height: 112px;
@@ -98,7 +95,6 @@
             justify-content: center;
             align-items: center;
             background-color:#121212;
-
         }
     }
 }
@@ -108,7 +104,6 @@
     padding-top: 1%;
     display: grid;
     
-
     @media (min-width: 1300px) {
         grid-template-columns: 0.7fr 2fr 0.8fr;
         grid-template-areas: "navbar-logo header-nav header-button";
@@ -130,7 +125,6 @@
                             "header-button";
         justify-content: space-around;
     }
-    
 
     &-logo {
         margin-left: 45px;
@@ -146,8 +140,11 @@
     line-height: 150%;
     text-align: center;
     color: #FFFFFF;
-}
 
+    &:hover {
+        color: rgb(165, 198, 241);
+    }
+}
 
 .day {
     font-family: Roboto;

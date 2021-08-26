@@ -16,6 +16,14 @@ html {
   cursor: pointer;
 }
 
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -108,18 +116,17 @@ section {
   }
 }
 
-.social:hover {
-  cursor: pointer;
-}
-
 .social-icon {
+  border-radius: 50%;
+  border: 3px solid black;
   width: 50px;
   height: 50px;
 }
 
-.social-icon:active {
-  background-color: purple;
-  border: 2px solid purple;
+.social-icon:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #832d4a;
 }
 
 .vk-icon {
@@ -209,6 +216,8 @@ section {
 }
 
 .header-button {
+  -webkit-transition: 1s;
+  transition: 1s;
   margin: 0 auto;
   width: 183px;
   height: 44px;
@@ -223,9 +232,13 @@ section {
   color: #FFFFFF;
 }
 
+.header-button:hover {
+  background: linear-gradient(94.26deg, #7e3fc7 9.51%, #6651dd 90.23%);
+}
+
 .header-button:active {
-  background-color: transparent;
-  border: 2px solid purple;
+  background: linear-gradient(94.26deg, #58466d 9.51%, #302085 90.23%);
+  border: 3px solid purple;
 }
 
 .header-button-area {
@@ -318,6 +331,10 @@ section {
   color: #FFFFFF;
 }
 
+.nav-item:hover {
+  color: #a5c6f1;
+}
+
 .day {
   font-family: Roboto;
   font-style: normal;
@@ -387,6 +404,7 @@ section {
 }
 
 .order-button {
+  border: none;
   grid-area: order-button;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -407,9 +425,12 @@ section {
   color: #FFFFFF;
 }
 
+.order-button:hover {
+  background: linear-gradient(94.78deg, #c9756f 11.19%, #6d176e 93.72%);
+}
+
 .order-button:active {
-  background-color: transparent;
-  border: 2px solid purple;
+  background: linear-gradient(94.78deg, #913a34 11.19%, #511152 93.72%);
 }
 
 @media (min-width: 701px) {
@@ -1273,10 +1294,17 @@ section {
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.speaker-bio:hover {
+  background-color: silver;
 }
 
 .speaker-bio:active {
   background-color: white;
+  color: black;
 }
 
 .subscribe {
@@ -1396,6 +1424,7 @@ section {
 }
 
 .subscribe-button {
+  border: none;
   position: absolute;
   width: 160px;
   height: 44px;
@@ -1423,8 +1452,11 @@ section {
   bottom: 0;
 }
 
+.subscribe-button:hover {
+  background: linear-gradient(94.78deg, #c9756f 11.19%, #6d176e 93.72%);
+}
+
 .subscribe-button:active {
-  background-color: transparent;
-  border: 2px solid purple;
+  background: linear-gradient(94.78deg, #913a34 11.19%, #511152 93.72%);
 }
 /*# sourceMappingURL=main.css.map */

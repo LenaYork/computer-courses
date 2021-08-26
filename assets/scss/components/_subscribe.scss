@@ -95,6 +95,7 @@
     }
 
     &-button {
+        border: none;
         position: absolute;
         width: 160px;
         height: 44px;
@@ -116,9 +117,12 @@
         right: -5%;
         bottom: 0;
 
+        &:hover {
+            background: linear-gradient(94.78deg, #c9756f 11.19%, #6d176e 93.72%);
+        }
+
         &:active {
-            background-color: transparent;
-            border: 2px solid purple;
+            background: linear-gradient(94.78deg, #913a34 11.19%, #511152 93.72%); 
         }
         
     }
