@@ -1445,7 +1445,7 @@ section {
 }
 
 .subscribe-input:focus {
-  border: 1px solid #585454;
+  border: 1px solid #be1fa4;
 }
 
 .subscribe-input::-webkit-input-placeholder {
