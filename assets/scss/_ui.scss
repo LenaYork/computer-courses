@@ -97,19 +97,19 @@ section {
 
     &-icon {
         border-radius: 50%;
-        border: 3px solif $black;
+        border: 5px solid $black;
         width: 50px;
         height: 50px;
 
         &:hover {
             cursor: pointer;
             border-radius: 50%;
-            border: 3px solid #832d4a;
+            border: 2px solid #c94571;
         }
 
         &:active {
             border-radius: 50%;
-            border: 5px solid rgb(109, 19, 104);
+            border: 4px solid #52024e
         }
     }
 }

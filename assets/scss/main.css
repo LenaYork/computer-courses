@@ -120,7 +120,7 @@ section {
 
 .social-icon {
   border-radius: 50%;
-  border: 3px solif #0a0a0a;
+  border: 5px solid #0a0a0a;
   width: 50px;
   height: 50px;
 }
@@ -128,12 +128,12 @@ section {
 .social-icon:hover {
   cursor: pointer;
   border-radius: 50%;
-  border: 3px solid #832d4a;
+  border: 2px solid #c94571;
 }
 
 .social-icon:active {
   border-radius: 50%;
-  border: 5px solid #6d1368;
+  border: 4px solid #52024e;
 }
 
 .vk-icon {
