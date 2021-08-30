@@ -52,11 +52,12 @@
         @include font-decoration(normal, $plan-title, 160%, left, 1);
 
         height: 44px;
+        font-size: larger;
         background-color: rgba(255, 255, 255, 0.25);
         border-radius: 50px 0px 0px 50px;
         box-sizing: border-box;
         padding-left: 15px;
-        color: white;
+        color: $white;
 
         @media (min-width: 676px) {
             width: 480px;
@@ -67,11 +68,18 @@
             margin: 0 auto;
         }
         
+
+        &:hover {
+            background-color: rgba(219, 216, 216, 0.25);
+        }
+
+        &:focus {
+            border: 1px solid rgb(88, 84, 84);
+        }
     }
 
     &-input::placeholder {
-        // padding-right: 5%;
-        color: #FFFFFF;
+        color: $white;
         font-size: large;
     }
 
@@ -84,13 +92,9 @@
         border-radius: 50px;
         box-sizing: border-box;
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: center;
-        color: #FFFFFF;
+
+        @include font-decoration(bold, $menu-text, 150%, center, 1);
+
         flex: none;
         order: 0;
         flex-grow: 0;
