@@ -54,24 +54,14 @@
     }
 
     &-name {
+
+        @include font-decoration(500, $plus-title, 100%, center, 1);
         margin: 0;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        text-align: center;
-        color: #FFFFFF;
     }
 
     &-info {
+        @include font-decoration(normal, $menu-text, 100%, center, 0.8);
         margin: 0;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        text-align: center;
-        color: #FFFFFF;
-        opacity: 0.8;
     }
 
     &-bio {
@@ -82,13 +72,8 @@
         border-radius: 50px;
         margin: 0 auto;
 
-        font-family: $title-font;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: center;
-        color: $white;
+
+        @include font-decoration(normal, $menu-text, 150%, center, 1);
         transition: 1s;
 
         &:hover {
@@ -96,8 +81,8 @@
         }
 
         &:active {
-            background-color: white;
-            color: black;
+            background-color: $white;
+            color: $black;
         }
     }
 }

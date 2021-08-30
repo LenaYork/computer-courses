@@ -1,7 +1,7 @@
 .order {
     margin-top: 0;
     display: grid;
-    background-color: #121212;
+    background-color: $section-color;
 
     @media (min-width: 1501px) {
         grid-template-columns: 17% 20% 1fr;
@@ -11,7 +11,6 @@
     @media (min-width: 701px) and (max-width: 1500px) {
         grid-template-columns: 45% 45%;
         grid-template-rows: 1fr 1.5fr;
-        // grid-row-gap: 15%;
         grid-template-areas: "order-button students" 
                             "earn earn";
     }
@@ -28,7 +27,7 @@
         width: 100%;
         padding-top: 1%;
         margin: 0 auto;
-        background-color: #121212;
+        background-color: $blackish;
     }
 
     &-button {
@@ -41,13 +40,7 @@
         background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
         border-radius: 50px;
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: center;
-        color: #FFFFFF;
+        @include font-decoration(bold, $menu-text, 150%, center, 1);
 
         &:hover {
             background: linear-gradient(94.78deg, #c9756f 11.19%, #6d176e 93.72%);
@@ -81,22 +74,13 @@
     }
 
     &-total-text {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        color: #FFFFFF;
-        opacity: 0.4;
+
+        @include font-decoration(normal, $menu-text, 150%, left, 0.4);
     }
 
     &-total-number {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 150%;
-        color: #FFFFFF;
+
+        @include font-decoration(bold, $menu-text, 150%, left, 1);
     }
 
     &-finish {
@@ -105,22 +89,13 @@
     }
 
     &-finish-text {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        color: #FFFFFF;
-        opacity: 0.4;
+
+        @include font-decoration(normal, $menu-text, 150%, left, 0.4);
     }
 
     &-finish-number {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 150%;
-        color: #FFFFFF;
+
+        @include font-decoration(bold, $menu-text, 150%, left, 1);
     }
 }
 
@@ -145,22 +120,13 @@
     }
 
     &-text {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        color: #FFFFFF;
-        opacity: 0.4;
+
+        @include font-decoration(normal, $menu-text, 150%, left,  0.4);
     }
 
     &-number {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 150%;
-        color: #FFFFFF;
+
+        @include font-decoration(bold, $menu-text, 150%, left, 1);
     }
 
     &-line {
@@ -176,7 +142,7 @@
     &-line-white {
         height: 6px;
         width: 60%;
-        background-color: white;
+        background-color: $white;
     }
 
     &-scale {
@@ -185,13 +151,7 @@
     }
 
     &-scale-number {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: right;
-        color: #FFFFFF;
-        opacity: 0.4;
+
+        @include font-decoration(normal, $menu-text, 150%, left, 1);
     }
 }

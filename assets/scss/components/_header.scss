@@ -2,6 +2,7 @@
     margin: 0 auto;
     background-image: url("../pics/header/header-bg.png");
     background-size: cover;
+    width: 98vw;
     max-width: 1920px;
     height: 960px;
 
@@ -17,7 +18,7 @@
         font-weight: bold;
         font-size: 64px;
         line-height: 140%;
-        color:$white;
+        color: $white;
 
         @media (min-width: 869px) {
             font-size: 64px;
@@ -58,13 +59,15 @@
         border-radius: 50px;
         border: none;
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: center;
-        color: #FFFFFF;
+
+        @include font-decoration(normal, $menu-text, 150%, center, 1);
+        // font-family: Roboto;
+        // font-style: normal;
+        // font-weight: normal;
+        // font-size: 16px;
+        // line-height: 150%;
+        // text-align: center;
+        // color: #FFFFFF;
 
         &:hover {
             background: linear-gradient(94.26deg, #7e3fc7 9.51%, #6651dd 90.23%);
@@ -134,13 +137,15 @@
 }
 
 .nav-item {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #FFFFFF;
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: normal;
+    // font-size: 16px;
+    // line-height: 150%;
+    // text-align: center;
+    // color: #FFFFFF;
+
+    @include font-decoration(normal, $menu-text, 150%, center, 1);
 
     &:hover {
         color: rgb(165, 198, 241);
@@ -148,21 +153,23 @@
 }
 
 .day {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 140%;
-    color: #FFFFFF;
+    @include font-decoration(bold, $card-text, 140%, left, 1);
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: bold;
+    // font-size: 36px;
+    // line-height: 140%;
+    // color: #FFFFFF;
 }
 
 .timing {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.4;
+    @include font-decoration(normal, $menu-text, 140%, center, 0.4);
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: normal;
+    // font-size: 16px;
+    // line-height: 140%;
+    // text-align: center;
+    // color: #FFFFFF;
+    // opacity: 0.4;
 }

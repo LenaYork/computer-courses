@@ -34,12 +34,8 @@ ul {
 }
 
 h2 {
-    font-family: $title-font;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 140%;
-    text-align: center;
-    color: $title-color;
+
+    @include font-decoration(bold, $big-title, 140%, center, 1);
 
     @media (min-width: 869px) {
         font-size: 3em;

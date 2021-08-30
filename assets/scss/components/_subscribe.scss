@@ -9,20 +9,13 @@
         width: 90%;
     }
 
-    &-title {
+    // &-title {
         
-    }
+    // }
 
     &-subtitle {
+        @include font-decoration(normal, $menu-text, 160%, center, 0.5);
         margin: 0 15%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 160%;
-        text-align: center;
-        color: #FFFFFF;
-        opacity: 0.5;
     }
 
     &-area {
@@ -34,9 +27,6 @@
     &-form {
         position: relative;
         margin-top: 10%;
-        // display: grid;
-        // grid-template-columns: 1fr;
-        // grid-template-rows: 1fr 1fr;
     
         @media (min-width: 676px) {
             width: 100%;
@@ -55,23 +45,14 @@
             flex-direction: column;
             position: static;
         }
-
-
     }
 
     &-input {
-        // width: 480px;
-        // width: 80%;
+
+        @include font-decoration(normal, $plan-title, 160%, left, 1);
+
         height: 44px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 160%;
         background-color: rgba(255, 255, 255, 0.25);
-        // opacity: 0.8;   
-        // opacity: 0.25;
-        
         border-radius: 50px 0px 0px 50px;
         box-sizing: border-box;
         padding-left: 15px;

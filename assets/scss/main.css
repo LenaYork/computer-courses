@@ -37,12 +37,14 @@ ul {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
+  font-size: 3em;
   line-height: 140%;
   text-align: center;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 @media (min-width: 869px) {
@@ -149,6 +151,7 @@ section {
   margin: 0 auto;
   background-image: url("../pics/header/header-bg.png");
   background-size: cover;
+  width: 98vw;
   max-width: 1920px;
   height: 960px;
 }
@@ -232,6 +235,7 @@ section {
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .header-button:hover {
@@ -331,6 +335,7 @@ section {
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .nav-item:hover {
@@ -343,7 +348,9 @@ section {
   font-weight: bold;
   font-size: 36px;
   line-height: 140%;
+  text-align: left;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .timing {
@@ -360,7 +367,7 @@ section {
 .main-container {
   margin: 0 auto;
   background-color: #0a0a0a;
-  width: 100vw;
+  width: 98vw;
   max-width: 1920px;
 }
 
@@ -426,6 +433,7 @@ section {
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .order-button:hover {
@@ -479,6 +487,7 @@ section {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
+  text-align: left;
   color: #FFFFFF;
   opacity: 0.4;
 }
@@ -489,7 +498,9 @@ section {
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
+  text-align: left;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .students-finish {
@@ -507,6 +518,7 @@ section {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
+  text-align: left;
   color: #FFFFFF;
   opacity: 0.4;
 }
@@ -517,7 +529,9 @@ section {
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
+  text-align: left;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .earn {
@@ -562,6 +576,7 @@ section {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
+  text-align: left;
   color: #FFFFFF;
   opacity: 0.4;
 }
@@ -572,7 +587,9 @@ section {
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
+  text-align: left;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .earn-line {
@@ -590,7 +607,7 @@ section {
 .earn-line-white {
   height: 6px;
   width: 60%;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .earn-scale {
@@ -608,9 +625,9 @@ section {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
-  text-align: right;
+  text-align: left;
   color: #FFFFFF;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .about {
@@ -704,14 +721,15 @@ section {
 }
 
 .start-description-text {
-  margin-bottom: 3%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 160%;
+  text-align: left;
   color: #FFFFFF;
   opacity: 0.5;
+  margin-bottom: 3%;
 }
 
 .start-area {
@@ -760,7 +778,9 @@ section {
   font-weight: bold;
   font-size: 36px;
   line-height: 140%;
+  text-align: left;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 @media (min-width: 751px) {
@@ -828,14 +848,15 @@ section {
 }
 
 .start-area-text {
-  margin-right: 5%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
+  text-align: left;
   color: #FFFFFF;
   opacity: 0.5;
+  margin-right: 5%;
 }
 
 .pluses-title {
@@ -907,6 +928,7 @@ section {
   line-height: 140%;
   text-align: center;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .plus-text {
@@ -1022,8 +1044,6 @@ section {
 }
 
 .plan-description {
-  margin: 0 auto;
-  max-width: 411px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1032,6 +1052,8 @@ section {
   text-align: center;
   color: #FFFFFF;
   opacity: 0.5;
+  margin: 0 auto;
+  max-width: 411px;
 }
 
 .week {
@@ -1096,6 +1118,10 @@ section {
   width: 6px;
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
   grid-area: weekline;
+}
+
+.week-left {
+  text-align: right;
 }
 
 @media (min-width: 930px) {
@@ -1262,24 +1288,27 @@ section {
 }
 
 .speaker-name {
-  margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
+  line-height: 100%;
   text-align: center;
   color: #FFFFFF;
+  opacity: 1;
+  margin: 0;
 }
 
 .speaker-info {
-  margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  line-height: 100%;
   text-align: center;
   color: #FFFFFF;
   opacity: 0.8;
+  margin: 0;
 }
 
 .speaker-bio {
@@ -1290,13 +1319,14 @@ section {
           box-sizing: border-box;
   border-radius: 50px;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+  opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1306,8 +1336,8 @@ section {
 }
 
 .speaker-bio:active {
-  background-color: white;
-  color: black;
+  background-color: #FFFFFF;
+  color: #0a0a0a;
 }
 
 .subscribe {
@@ -1327,7 +1357,6 @@ section {
 }
 
 .subscribe-subtitle {
-  margin: 0 15%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1336,6 +1365,7 @@ section {
   text-align: center;
   color: #FFFFFF;
   opacity: 0.5;
+  margin: 0 15%;
 }
 
 .subscribe-area {
@@ -1379,12 +1409,15 @@ section {
 }
 
 .subscribe-input {
-  height: 44px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 1;
+  height: 44px;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 50px 0px 0px 50px;
   -webkit-box-sizing: border-box;

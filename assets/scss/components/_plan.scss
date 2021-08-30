@@ -7,16 +7,11 @@
     }
 
     &-description {
+
+        @include font-decoration(normal, $menu-text, 160%, center, 0.5);
+
         margin: 0 auto;
         max-width: 411px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 160%;
-        text-align: center;
-        color: #FFFFFF;
-        opacity: 0.5;
     }
 }
 
@@ -62,9 +57,9 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: $plan-title;
         line-height: 160%;
-        color: #FFFFFF;
+        color: $white;
         opacity: 0.5;
     }
 
@@ -72,9 +67,9 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: $plan-text;
         line-height: 160%;
-        color: #FFFFFF;
+        color: $white;
     }
 
     &-line {
@@ -84,6 +79,8 @@
     }
 
     &-left {
+        text-align: right;
+        
         @media (min-width: 930px) {
             text-align: right;
             margin-left: 0;

@@ -1,8 +1,8 @@
 .start {
-   
-    &-title {
+
+    // &-title {
     
-    }
+    // }
 
     &-description {
         width: 100%;
@@ -10,14 +10,8 @@
     }
 
     &-description-text {
+        @include font-decoration(normal, $menu-text, 160%, left, 0.5);
         margin-bottom: 3%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 160%;
-        color: #FFFFFF;
-        opacity: 0.5;
     }
 
     &-area {
@@ -45,12 +39,7 @@
     }
 
     &-percent {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 140%;
-        color: #FFFFFF;
+        @include font-decoration(bold, $card-text, 140%, left, 1);
 
         @media (min-width: 751px) {
             margin: 0;
@@ -106,13 +95,8 @@
     }
 
     &-area-text {
+
+        @include font-decoration(normal, $plan-title, 160%, left, 0.5);
         margin-right: 5%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 160%;
-        color: #FFFFFF;
-        opacity: 0.5;
     }
 }
