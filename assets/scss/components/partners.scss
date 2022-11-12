@@ -1,18 +1,12 @@
 .partners {
-
     &-logo {
         margin-right: 15px;
         margin-left: 25px;
     }
 
-    &-title {
-       
-    }
-
     &-container {
         width: 100%;
         display: grid;
-        // grid-template-columns: repeat(auto-fill, minmax(205px, 260px));
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-items: stretch;
         justify-content: center;
@@ -33,28 +27,17 @@
             grid-template-rows: repeat(1fr);
         }
     }
-
 }
 
 .partner {
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 1px solid rgba(255, 255, 255, 0.3);
-
-    // &:nth-child(-n+4) {
-    //     border-bottom: 5px solid rgba(255, 255, 255, 0.3);
-    // }
 
     & img {
         width: 198px;
         height: 93px;
-
     }
-
-    // &1 {
-    //     border-bottom: 1px solid $white;
-    // }
 }
 
 .desktop-right {

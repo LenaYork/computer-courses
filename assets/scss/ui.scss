@@ -5,20 +5,18 @@ html {
 
 .button {
     background: transparent;
-    transition: 2s;
-    
 
     &:hover {
         cursor: pointer;
     }
-
-   }
+}
 
 a {
     text-decoration: none;
 
     &:hover {
         cursor: pointer;
+        color: #d4b3df;
     }
 }
 
@@ -33,7 +31,6 @@ h2 {
     line-height: 140%;
     text-align: center;
     color: $title-color;
-
 
     @media (min-width: 869px) {
         font-size: 3em;
@@ -59,7 +56,6 @@ p {
     }
 }
 
-//отредачить!
 section {
     width: 70%;
     margin: 10% 15%;
@@ -79,7 +75,6 @@ section {
         }
     }
 }
-
 
 //social icons
 .social {
@@ -102,10 +97,14 @@ section {
     &-icon {
         width: 50px;
         height: 50px;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
 
         &:active {
-            background-color: purple;
-            border: 2px solid purple;
+            transform: scale(1.1);
         }
     }
 }

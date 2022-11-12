@@ -1,14 +1,11 @@
 .pluses {
-
     &-title {
         margin-bottom: 5%;
     }
 
     &-area {
         display: grid;
-        // grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
         grid-template-columns: 1fr 1fr 1fr;
-        // grid-gap: 50px;
 
         @media (min-width: 1450px) {
             grid-template-columns: 1fr 1fr 1fr;

@@ -2,6 +2,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 850px) {
+  .plan {
+    height: 1180px;
+  }
+}
+
 .plan-central {
   text-align: center;
   margin-bottom: 3%;
@@ -42,7 +48,7 @@
         grid-template-columns: minmax(200px, 304px) 7px minmax(200px, 304px);
     -ms-grid-rows: (1fr)[7];
         grid-template-rows: repeat(7, 1fr);
-        grid-template-areas: "week1 weekline empty1" "empty2 weekline week2" "week3 weekline empty3" "empty4 weekline week4" "week5 weekline empty5" "empty6 weekline week6" "week7 weekline empty7";
+        grid-template-areas: "week1 weekline empty1" "empty2 weekline week2" "week3 weekline empty3" "empty4 weekline week4" "week5 weekline empty5" "empty6 weekline week6" "week7 weekline empty7";
   }
 }
 
@@ -55,7 +61,7 @@
         grid-template-columns: 7px minmax(200px, 304px);
     -ms-grid-rows: (1fr)[7];
         grid-template-rows: repeat(7, 1fr);
-        grid-template-areas: "weekline week1" "weekline week2" "weekline week3" "weekline week4" "weekline week5" "weekline week6" "weekline week7";
+        grid-template-areas: "weekline week1" "weekline week2" "weekline week3" "weekline week4" "weekline week5" "weekline week6" "weekline week7";
   }
 }
 

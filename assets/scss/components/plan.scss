@@ -1,6 +1,9 @@
 .plan {
-
     margin: 0 auto;
+
+    @media (max-width: 850px) {
+        height: 1180px;
+    }
 
     &-central {
         text-align: center;
@@ -18,30 +21,18 @@
         text-align: center;
         color: #FFFFFF;
         opacity: 0.5;
-        
     }
 }
 
 .week {
-
     max-width: 304px;
     min-height: 118px;
-   
+
     &-container {
         width: 100%;
         max-width: 750px;
         margin: 0 auto;
         display: grid;
-       
-        // grid-template-columns: minmax(200px, 304px) 7px minmax(200px, 304px);
-        // grid-template-rows: repeat(7, 1fr);
-        // grid-template-areas: "week1 weekline empty1"
-        //                     "empty2 weekline week2"
-        //                     "week3 weekline empty3"
-        //                     "empty4 weekline week4"
-        //                     "week5 weekline empty5"
-        //                     "empty6 weekline week6"
-        //                     "week7 weekline empty7";
 
         @media (min-width: 930px) {
             justify-content: space-between;
@@ -120,16 +111,15 @@
         }
     }
 
-       //цикл
+       //loop
     @for $i from 1 through 7 {
         &#{$i} {
             grid-area: week#{$i};
         }
     }
-
 }
 
-//цикл
+//loop
 .empty {
     @for $i from 1 through 7 {
         &#{$i} {

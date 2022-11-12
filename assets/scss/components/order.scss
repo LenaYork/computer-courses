@@ -1,5 +1,5 @@
 .order {
-    margin-top: 0;
+    margin: 0;
     display: grid;
     background-color: #121212;
 
@@ -8,19 +8,17 @@
         grid-template-areas: "order-button students earn";
     }
     
-
     @media (min-width: 701px) and (max-width: 1500px) {
         grid-template-columns: 45% 45%;
         grid-template-rows: 1fr 1.5fr;
-        // grid-row-gap: 15%;
         grid-template-areas: "order-button students" 
                             "earn earn";
+        margin-bottom: 0;
     }
 
     @media (max-width: 700px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        // grid-row-gap: 15%;
         grid-template-areas: "order-button"
                             "students" 
                             "earn";
@@ -29,21 +27,20 @@
     &-wrap {
         width: 100%;
         padding-top: 1%;
-        padding-bottom: 5px;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
         background-color: #121212;
     }
 
     &-button {
         grid-area: order-button;
         align-self: center;
-        // width: 169px;
         height: 44px; 
         align-items: center;
         padding: 10px 30px;
         background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
         border-radius: 50px;
-        
 
         font-family: Roboto;
         font-style: normal;
@@ -52,23 +49,25 @@
         line-height: 150%;
         text-align: center;
         color: #FFFFFF;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        } 
 
         &:active {
-            background-color: transparent;
-            border: 2px solid purple;
+            transform: scale(105%);
         }
 
         @media (min-width: 701px) {
             margin: 0;
+            margin-bottom: 5%;
         }
     
         @media (max-width: 700px) {
             margin: 0 auto;
         }
     }
-
-    
-
 }
 
 .students {
@@ -176,7 +175,6 @@
         height: 6px;
         width: 40%; 
         background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
-
     }
 
     &-line-white {
@@ -200,5 +198,4 @@
         color: #FFFFFF;
         opacity: 0.4;
     }
-
 }

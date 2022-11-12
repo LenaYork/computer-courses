@@ -1,9 +1,4 @@
 .start {
-   
-    &-title {
-    
-    }
-
     &-description {
         width: 100%;
         max-width: 410px;
@@ -23,35 +18,26 @@
     &-area {
         width: 100%;
         display: grid;
-        // justify-content: stretch;
         justify-content: stretch;
         justify-items: stretch;
         align-items: stretch;
         grid-gap: 0;
 
         @media (min-width: 1000px) {
-            // grid-template-columns:  1fr 1fr 1fr 1fr;
-            // grid-template-columns: repeat(4, 324px);
             grid-template-columns: 1fr 1fr 1fr 1fr;
             justify-items: stretch;
         }
 
         @media (min-width: 752px) and (max-width: 999px) {
-            // grid-template-columns: 1fr 1fr;
-            // grid-template-columns: repeat(2, 324px);
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
         }
 
         @media (max-width: 751px) {
-            // grid-template-columns: 324px;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
         }
-        // grid-template-columns: repeat(auto-fill, 324px);
     }
-
-    
 
     &-percent {
         font-family: Roboto;
@@ -66,8 +52,6 @@
         }
     }
 
-    
-
     &-percent-image {
         height: 80px;
         display: flex;
@@ -80,11 +64,9 @@
         @media (min-width: 751px) {
             margin-bottom: 1%;
         }
-        
     }
 
     &-area-item {
-        // width: 324px;
         width: 100%;
     }
 
@@ -97,26 +79,22 @@
     }
 
     &-percent1000 {
-        // width: 324px;
         height: 80px;
         background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     }
 
     &-percent75 {
-        // width: 324px;
         height: 60px;
         background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 
     &-percent50 {
-        // width: 324px;
         height: 30px;
         background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     }
 
     &-percent-total {
-        // width: 324px;
         height: 10px;
         background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
         transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -124,6 +102,7 @@
 
     &-area-text {
         margin-right: 5%;
+        margin-top: 5px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;

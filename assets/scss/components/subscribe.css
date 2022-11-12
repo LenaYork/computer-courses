@@ -71,7 +71,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 25px;
   line-height: 160%;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 50px 0px 0px 50px;
@@ -79,6 +79,8 @@
           box-sizing: border-box;
   padding-left: 15px;
   color: white;
+  opacity: 0.4;
+  border: 0;
 }
 
 @media (min-width: 676px) {
@@ -140,10 +142,15 @@
   margin: 0px 10px;
   right: -5%;
   bottom: 0;
+  opacity: 0.9;
+}
+
+.subscribe-button:hover {
+  opacity: 1;
 }
 
 .subscribe-button:active {
-  background-color: transparent;
-  border: 2px solid purple;
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
 }
 /*# sourceMappingURL=subscribe.css.map */

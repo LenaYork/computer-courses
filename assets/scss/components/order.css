@@ -1,5 +1,5 @@
 .order {
-  margin-top: 0;
+  margin: 0;
   display: -ms-grid;
   display: grid;
   background-color: #121212;
@@ -19,7 +19,8 @@
         grid-template-columns: 45% 45%;
     -ms-grid-rows: 1fr 1.5fr;
         grid-template-rows: 1fr 1.5fr;
-        grid-template-areas: "order-button students"  "earn earn";
+        grid-template-areas: "order-button students"  "earn earn";
+    margin-bottom: 0;
   }
 }
 
@@ -29,15 +30,20 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "order-button" "students"  "earn";
+        grid-template-areas: "order-button" "students"  "earn";
   }
 }
 
 .order-wrap {
   width: 100%;
   padding-top: 1%;
-  padding-bottom: 5px;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
   background-color: #121212;
 }
 
@@ -60,16 +66,22 @@
   line-height: 150%;
   text-align: center;
   color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.order-button:hover {
+  opacity: 1;
 }
 
 .order-button:active {
-  background-color: transparent;
-  border: 2px solid purple;
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
 }
 
 @media (min-width: 701px) {
   .order-button {
     margin: 0;
+    margin-bottom: 5%;
   }
 }
 
