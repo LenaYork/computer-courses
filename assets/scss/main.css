@@ -193,7 +193,8 @@ section {
 
 @media (max-width: 549px) {
   .header-title {
-    font-size: 64px;
+    font-size: 54px;
+    margin-bottom: 30px;
   }
 }
 
@@ -297,6 +298,13 @@ section {
       -ms-flex-align: center;
           align-items: center;
   background-color: #121212;
+}
+
+@media (max-width: 868px) {
+  .header-countdown-box {
+    width: 80px;
+    height: 100px;
+  }
 }
 
 .navbar {
